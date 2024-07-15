@@ -1,0 +1,7 @@
+{
+  "name": "Honeys-Kitchen-Frontend",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
