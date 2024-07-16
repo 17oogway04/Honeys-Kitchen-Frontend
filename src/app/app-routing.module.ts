@@ -13,7 +13,23 @@ const routes: Routes = [
   },
   {
     path: 'login',
-    loadChildren: () => import('./Components/login/login.component').then(m => m.LoginComponent)
+    loadChildren: () => import('./Components/login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'signup',
+    loadChildren: () => import('./Components/signup/signup.module').then( m => m.SignupPageModule)
+  },
+  {
+    path: 'payment',
+    loadChildren: () => import('./Components/payment/payment.module').then( m => m.PaymentPageModule)
+  },
+  {
+    path: 'schedule',
+    loadChildren: () => import('./Components/schedule/schedule.module').then( m => m.SchedulePageModule)
+  },
+  {
+    path: 'services-offered',
+    loadChildren: () => import('./Components/services-offered/services-offered.module').then( m => m.ServicesOfferedPageModule)
   }
 ];
 
