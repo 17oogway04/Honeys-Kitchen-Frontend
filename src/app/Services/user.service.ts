@@ -26,7 +26,7 @@ export class UserService {
     queryParams = queryParams.append('password', password);
 
     return this.http.get(`${this.baseURL}/login`, {params: queryParams, responseType: 'text'})
-      .pipe(tap((response: any) => {
+      .pipe(tap(() => {
         this.isLoggedInSubj.next(true);
       }))
   }
