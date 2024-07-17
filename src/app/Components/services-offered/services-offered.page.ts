@@ -11,10 +11,7 @@ export class ServicesOfferedPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    // window.Calendly.initPopupWidget({
-    //   url: 'https://calendly.com/17oogway04/catering',
-    //   parentElement: document.querySelector('.calendly-badge-widget'),
-    // });
+  
   }
 
 }
