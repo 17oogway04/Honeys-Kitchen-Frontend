@@ -5,9 +5,23 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">servicesOffered</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-title style="padding-top: 40px; text-align: center;">Which are you scheduling?</ion-title>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div style="text-align: center; padding: 10px;">
+          <ion-button shape="round" color="dark"onclick="Calendly.initPopupWidget({url:'https://calendly.com/17oogway04/catering'});
+return false;">
+            Consulation
+          </ion-button>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div style="text-align: center; padding: 10px;">
+          <ion-button shape="round" color="dark">Service</ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
 </ion-content>
