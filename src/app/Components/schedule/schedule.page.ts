@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+export {}; declare global { interface Window { Calendly: any; } } 
 
 @Component({
   selector: 'app-schedule',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./schedule.page.scss'],
 })
 export class SchedulePage implements OnInit {
+
+
 
   constructor() { }
 
