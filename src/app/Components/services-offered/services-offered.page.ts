@@ -9,6 +9,8 @@ export {}; declare global { interface Window { Calendly: any; } }
 })
 export class ServicesOfferedPage implements OnInit {
 
+  imageUrl: string = 'assets/Minimalist Simple Client Services Welcome Packet_20240627_075439_0004-1.jpg'
+
   constructor() { }
 
   ngOnInit() {
