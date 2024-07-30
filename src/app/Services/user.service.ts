@@ -7,7 +7,7 @@ import { User } from '../Models/user';
   providedIn: 'root'
 })
 export class UserService {
-  baseURL: string = "http://localhost:5268"
+  baseURL: string = "http://localhost:5268/api/user"
   tokenKey: string = "honeysKitchenToken"
 
   public isLoggedInSubj = new Subject<boolean>();
