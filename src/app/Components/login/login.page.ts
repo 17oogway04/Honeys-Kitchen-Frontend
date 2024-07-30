@@ -19,13 +19,14 @@ export class LoginPage implements OnInit {
 
   onSubmit()
   {
-    this.userService.login(this.email, this.password).subscribe((response:any) => {
-      window.alert("Logged in successfully");
-      this.router.navigate(['/home']);
-      this.loggedIn = true;
-    }, error => {
-      console.log('Error: ', error);
-      window.alert('Unsuccessful login');
-    })
+    // this.userService.login(this.email, this.password).subscribe((response:any) => {
+    //   window.alert("Logged in successfully");
+    //   this.router.navigate(['/home']);
+    //   this.loggedIn = true;
+    // }, error => {
+    //   console.log('Error: ', error);
+    //   window.alert('Unsuccessful login');
+    // })
+    window.alert("This feature will be available soon!")
   }
 }
