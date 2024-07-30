@@ -20,7 +20,7 @@ export class SignupPage implements OnInit {
   signUp() {
     this.userService.register(this.newUser).subscribe(() => {
       window.alert("Registration was successful");
-      this.router.navigate(['home']);
+      this.router.navigate(['login']);
     }, error => {
       window.alert("User Registration Error");
       console.log("Error: ", error)

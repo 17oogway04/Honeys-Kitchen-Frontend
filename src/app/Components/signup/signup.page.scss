@@ -1,19 +1,75 @@
-// ion-content{
-//   --background: url('../../../assets/WELCOME PACKET.png');
-// }
+ion-content{
+    --background: url('../../../assets/WELCOME PACKET.png') no-repeat center center/cover;
+}
 
+#form{
+    display: flex;
+    flex-direction: column;
+    height: 658px;
+    width: 400px;
+    border: 1px solid black;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: inset -5px -5px rgba(0,0,0,0.5);
+    border-radius: 25px;
+}
+ion-header{
+    text-align: center;
+    color: white;
+    border-bottom: 3px solid rgba(255,255,255,0.5);
+}
+ion-title{
+    font-family: "Maname", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 2;
+    padding: 10px;
+    font-size:xx-large;
+    
+}
 
-// .form-container {
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-//   width: 80%;
-//   max-width: 500px;
-//   padding: 20px;
-//   background: rgba(255, 255, 255, 0.8); // Slightly transparent background for better readability
-//   border-radius: 8px;
-//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-// }
+ion-item{
+   padding: 3px;
+   margin: 7px;
+//    width: 65%;
+   border: none;
+   outline: none;
+   border-radius: 13px;
+   background-color: rgba(0,0,0,0.5);
+   box-shadow: inset -3px -3px rgba(0,0,0,0.5);
+   color: white;
+}
+ion-input, ion-textarea{
+    font-family: "Maname", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: grey;
+}
 
+#submit{
+    // padding: 10px 20px;
+    margin: 5px;
+    box-shadow: inset -3px -3px rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 20px;
 
+}
+
+ion-button{
+    font-family: "Maname", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    margin-bottom: 12px;
+}
+
+#submit:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}

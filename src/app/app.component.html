@@ -8,7 +8,12 @@
       <ion-button color="dark"slot="end" fill="clear" routerLink="/services-offered">Services</ion-button>
       <ion-button color="dark"slot="end" fill="clear" routerLink="/schedule">Schedule</ion-button>
       <ion-button color="dark"slot="end" fill="clear" routerLink="/payment">Make a payment</ion-button>
-      <ion-button color="dark"shape="round" slot="end">
+      <ion-button color="dark"shape="round" slot="end" id="hover-trigger">
+        <ion-popover trigger="hover-trigger" triggerAction="hover">
+          <ng-template>
+            <ion-content class="ion-padding">Feature will be active soon!</ion-content>
+          </ng-template>
+        </ion-popover>
         <ion-icon slot="icon-only" name="person-circle"></ion-icon>
       </ion-button>
     </ion-toolbar>

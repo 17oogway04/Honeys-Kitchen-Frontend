@@ -18,4 +18,8 @@ export class AppComponent {
     });
   }
 
+  updatesComing(){
+    window.alert("Updates coming soon for this feature!")
+  }
+
 }
