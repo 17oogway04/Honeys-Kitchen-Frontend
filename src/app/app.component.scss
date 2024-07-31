@@ -10,3 +10,38 @@ ion-button{
   font-style: normal;
   margin-bottom: 10px;
 }
+
+/* Default styles for larger screens */
+#main {
+  display: flex;
+}
+
+/* Styles for smaller screens */
+@media (max-width: 600px) {
+  #main {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+  }
+}
+
+/* Default styles for the menu button (visible on small screens) */
+#menu {
+  display: none; /* Hide by default */
+}
+
+/* Show the menu button on smaller screens */
+@media (max-width: 600px) {
+  #menu {
+    display: block; /* Show on small screens */
+  }
+}
+
+/* Hide the menu button on larger screens */
+@media (min-width: 600px) {
+  #menu {
+    display: none !important;
+  }
+}
