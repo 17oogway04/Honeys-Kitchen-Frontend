@@ -5,3 +5,16 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+ion-content{
+  font-family: "Maname", serif;
+    font-weight: 400;
+    font-style: normal;  
+}
+
+@media screen and (max-width: 1101px)
+{
+    #header{
+        display: none;
+    }
+}
+
