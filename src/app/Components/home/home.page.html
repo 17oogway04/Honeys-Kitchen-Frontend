@@ -1,3 +1,13 @@
 <ion-content [fullscreen]="true">
   <ion-img src="../../../assets/HONEY'S KITCHEN.png" style="padding-top: 20px;"></ion-img>
+  <ion-grid>
+    <ion-row>
+      <ion-col sizeLg="4" sizeMd="4" sizeXs="6" *ngFor="let image of [1,2,3,4,5,6,7,8,9]">
+        <div class="img-wrapper" [style.background-image]="'url(../../../assets/img/' + image + '.jpeg)'">
+
+        </div>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
