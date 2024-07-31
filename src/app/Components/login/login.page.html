@@ -1,22 +1,25 @@
 <ion-header [translucent]="true">
-    <ion-toolbar>
-      
-    </ion-toolbar>
-  </ion-header>
-  
+  <ion-toolbar>
+
+  </ion-toolbar>
+</ion-header>
+
 <ion-content [fullscreen]="true">
-    <ion-list>
-        <form #form="ngForm" (ngSubmit)="onSubmit()">
-    <ion-item class="formItem">
-        <ion-input type="text" label="Email" labelPlacement="floating" placeholder="Enter email" name="emailAdress" [(ngModel)]="email"></ion-input>
+  <ion-list>
+    <form #form="ngForm" (ngSubmit)="onSubmit()">
+      <ion-item class="formItem">
+        <ion-input type="text" label="Email" labelPlacement="floating" placeholder="Enter email" name="emailAdress"
+          [(ngModel)]="email"></ion-input>
       </ion-item>
       <ion-item class="formItem">
-        <ion-input type="text" label="Password" labelPlacement="floating" placeholder="Enter password" name="password" [(ngModel)]="password"></ion-input>
+        <ion-input type="text" label="Password" labelPlacement="floating" placeholder="Enter password" name="password"
+          [(ngModel)]="password"></ion-input>
       </ion-item>
       <div>
         <ion-button class="formItem" fill="clear" color="dark" type="submit">Login</ion-button>
       </div>
-  </form>
-    </ion-list>
+    </form>
+  </ion-list>
   
+
 </ion-content>
