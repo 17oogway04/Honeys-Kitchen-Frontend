@@ -1,11 +1,4 @@
 <ion-app>
-  <!-- <ion-header [translucent]="true" *ngIf="showHeader">
-    <ion-toolbar>        
-      <ion-img src="../../../assets/img/CO Logo.jpeg" style="height: 60px;" slot="start"></ion-img>
-      <ion-title>      
-        HONEY'S KITCHEN
-      </ion-title>       -->
-
       <!--Menu-->
       <ion-menu side="end" contentId="main-content">
         <ion-header>
@@ -36,28 +29,13 @@
               <ion-icon slot="start" name="card-outline"></ion-icon>
               <ion-label>Payment</ion-label>
             </ion-item>
+            <ion-item>
+              <ion-icon slot="start" name="person-circle-outline"></ion-icon>
+              <ion-label id="hover-trigger">Profile</ion-label>
+            </ion-item>
           </ion-list>
         </ion-content>
       </ion-menu>
-
-
-      <!-- <ion-button color="dark" slot="end" fill="clear" routerLink="/home">Home</ion-button>
-      <ion-button color="dark"slot="end" fill="clear" routerLink="/services-offered">Services</ion-button>
-      <ion-button color="dark"slot="end" fill="clear" routerLink="/schedule">Schedule</ion-button>
-      <ion-button color="dark"slot="end" fill="clear" routerLink="/payment">Make a payment</ion-button>
-      <ion-button color="dark"shape="round" slot="end" id="hover-trigger"> -->
-
-
-
-        <!-- <ion-popover trigger="hover-trigger" triggerAction="hover">
-          <ng-template>
-            <ion-content class="ion-padding">Feature will be active soon!</ion-content>
-          </ng-template>
-        </ion-popover>
-        <ion-icon slot="icon-only" name="person-circle"></ion-icon>
-      </ion-button>
-    </ion-toolbar>
-  </ion-header> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Maname&display=swap" rel="stylesheet">
@@ -71,6 +49,11 @@
         <ion-button routerLink="/services-offered">Services</ion-button>
         <ion-button routerLink="/schedule">Schedule</ion-button>
         <ion-button routerLink="/payment">Payment</ion-button>
+         <ion-popover trigger="hover-trigger" triggerAction="hover">
+          <ng-template>
+            <ion-content class="ion-padding">Feature will be active soon!</ion-content>
+          </ng-template>
+        </ion-popover>
       </ion-buttons>
       <ion-buttons slot="end" id="menu">
         <ion-menu-button></ion-menu-button>
