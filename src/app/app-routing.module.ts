@@ -30,7 +30,11 @@ const routes: Routes = [
   {
     path: 'services-offered',
     loadChildren: () => import('./Components/services-offered/services-offered.module').then( m => m.ServicesOfferedPageModule)
-  }
+  },
+  {
+    path: 'getting-started',
+    loadChildren: () => import('./Components/getting-started/getting-started.module').then( m => m.GettingStartedPageModule)
+  },
 ];
 
 @NgModule({
