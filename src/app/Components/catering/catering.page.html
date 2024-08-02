@@ -1,0 +1,26 @@
+<ion-content>
+  <div style="text-align: center; ">
+    <form (ngSubmit)="onSubmit()" #contactForm="ngForm" id="contactForm">
+      <!-- Hidden input -->
+      <input type="hidden" name="contact_number" value="697483">
+
+      <!-- Name -->
+      <label for="user_name">Name</label>
+      <input id="user_name" name="user_name" placeholder="Enter name" ngModel required>
+      <br>
+      <!-- Email -->
+      <label for="user_email">Email</label>
+      <input id="user_email" name="user_email" placeholder="Enter email" ngModel required>
+      <br>
+      <!-- Message -->
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Enter any information that you would like the chef to know"
+        ngModel required></textarea>
+      <br>
+      <!-- Submit button -->
+      <ion-button shape="round" color="dark" type="submit">Send</ion-button>
+    </form>
+
+
+  </div>
+</ion-content>
