@@ -8,8 +8,6 @@ export {}; declare global { interface Window { Calendly: any; } }
 })
 export class SchedulePage implements OnInit {
 
-
-
   constructor() { }
 
   ngOnInit() {

@@ -1,0 +1,32 @@
+#contactForm {
+    margin: 20px;
+}
+
+ion-content {
+    font-family: "Maname", serif;
+    font-weight: 400;
+    font-style: normal;   
+}
+
+input,
+textarea {
+    // position: absolute;
+    margin: 10px;
+    width: 80%;
+    outline: none;
+    padding: 0 30px;
+    line-height: 35px;
+    border-radius: 10px;
+    border: 2px solid black;
+    transition: 0.1s ease;
+    z-index: 1111;
+}
+
+label {
+    position: relative;
+    font-size: 1.4em;
+    color: black;
+    padding: 0 25px;
+    margin: 0 20px;
+    transition: 0.2s ease;
+}

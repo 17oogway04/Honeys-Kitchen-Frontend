@@ -1,45 +1,59 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>schedule</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true">  
 
-  <ion-content [fullscreen]="true">
-    <ion-title style="padding-top: 40px; text-align: center;">Which are you scheduling?</ion-title>
-    <ion-grid>
-      <ion-row>
-        <ion-col [sizeXs]="12" sizeSm="6"sizeLg="6">
-          <ion-card style="max-width: 400px; text-align: center;">
-            <img alt="Honey's Kitchen" src="../../../assets/img/Meatrolls.jpeg" />
-            <ion-card-header>
-              <ion-card-title>Schedule a Service</ion-card-title>
-            </ion-card-header>
-            <ion-card-content>
-              Please select a time that you and the chef can meet together and discuss the services that you are
-              requiring
-            </ion-card-content>
-            <ion-button fill="clear" color="dark" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/17oogway04/catering'});
-      return false;">Meal Preppping</ion-button>
-            <ion-button fill="clear" color="dark" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/17oogway04/catering'});
-      return false;">Banquets</ion-button>
-            <ion-button fill="clear" color="dark" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/17oogway04/catering'});
+  <ion-title style=" margin-top: 100px; text-align: center; margin-bottom: 10px;">Which are you scheduling?</ion-title>
+
+  <!-- <ion-grid>
+    <ion-row>
+      <ion-col [sizeXs]="12" sizeSm="6" sizeLg="6">
+        <ion-card style="max-width: 400px; text-align: center;">
+          <img alt="Honey's Kitchen" src="../../../assets/img/Meatrolls.jpeg" />
+          <ion-card-header>
+            <ion-card-title>Request a Service</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Please select a service that you would like to request and send an email with any information the chef would
+            need to know.
+          </ion-card-content>
+
+          <ion-button fill="clear" color="dark">Meal Preppping</ion-button>
+          <ion-button fill="clear" color="dark">Banquets</ion-button>
+          <ion-button fill="clear" color="dark" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/17oogway04/catering'});
       return false;">Catering</ion-button>
-          </ion-card>
-        </ion-col>
-        <ion-col [sizeXs]="12" sizeSm="6"size-lg="6">
-          <ion-card style="max-width: 400px; text-align: center;">
-            <img alt="Honey's Kitchen" src="../../../assets/img/Potatorolls.jpeg" />
-            <ion-card-header>
-              <ion-card-title>Schedule a Consulation</ion-card-title>
-            </ion-card-header>
-            <ion-card-content>
-              Please select a time that you and the chef can meet together and begin the first steps!
-            </ion-card-content>
-            <ion-button fill="clear" color="dark" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/17oogway04/catering'});
+        </ion-card>
+      </ion-col>
+      <ion-col [sizeXs]="12" sizeSm="6" size-lg="6">
+        <ion-card style="max-width: 400px; text-align: center;">
+          <img alt="Honey's Kitchen" src="../../../assets/img/Potatorolls.jpeg" />
+          <ion-card-header>
+            <ion-card-title>Schedule a Consulation</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Please select a time that you and the chef can meet together and begin the first steps!
+          </ion-card-content>
+          <ion-button fill="clear" color="dark" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/17oogway04/catering'});
         return false;">Consulation</ion-button>
-          </ion-card>
-        </ion-col>
-      </ion-row>
+        </ion-card>
+      </ion-col>
+    </ion-row>
 
-    </ion-grid>
-  </ion-content>
+  </ion-grid> -->
+
+  <ion-toolbar>
+    <ion-segment>
+      <ion-segment-button routerLink="meal-prep">
+        <ion-label>Meal Prep</ion-label>
+      </ion-segment-button>
+      <ion-segment-button routerLink="catering">
+        <ion-label>Catering</ion-label>
+      </ion-segment-button>
+      <ion-segment-button routerLink="banquets">
+        <ion-label>Banquets</ion-label>
+      </ion-segment-button>
+      <ion-segment-button routerLink="consulation">
+        <ion-label>Consulation</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+  <router-outlet></router-outlet>
+
+</ion-content>
