@@ -1,16 +1,20 @@
 <ion-content [fullscreen]="true">
   <ion-grid>
     <ion-row>
-      <ion-col style="background-color: black;" id="header">
-        <ion-header>        
-          <ion-title style="font-size: 9rem; text-align: center; line-height: 2; color: white;">Honey's
-            Kitchen</ion-title>
-          <h2 style="text-align: center; font-size: 4rem; padding-bottom: 20px; color: white;">Private Chef Service |
-            Dining Made Easy</h2>
-        </ion-header>
+      <ion-col id="header" sizeLg="12" sizeMd="8" sizeSm="6" >
+        <ion-card style="margin-top: 60px; text-align: center; background-color: black; height: 340px;">
+          <ion-card-header>
+            <ion-card-title style="font-size: 4rem; color: white;">
+              Honey's Kitchen
+            </ion-card-title>
+            <br>
+            <p>-----------------------------------------------------------------------------------</p>
+          </ion-card-header>
+          <ion-card-content style="font-size: 1.5rem; color: white; margin-bottom: 10px;">
+            Private Chef Service | Dining Made Easy
+          </ion-card-content>
+        </ion-card>
       </ion-col>
-    </ion-row>
-    <ion-row>
       <ion-col sizeLg="4" sizeMd="4" sizeXs="6" *ngFor="let image of [1,2,3,4,5,6,7,8,9]">
         <div class="img-wrapper" [style.background-image]="'url(../../../assets/img/' + image + '.jpeg)'">
         </div>
@@ -18,7 +22,8 @@
     </ion-row>
   </ion-grid>
   <div style="text-align: center;">
-    <h1 style="font-size: xx-large; padding-bottom: 20px;">Personalized Meal Preps cooked in your own home, or delivered weekly</h1>
+    <h1 style="font-size: xx-large; padding-bottom: 20px;">Personalized Meal Preps cooked in your own home, or delivered
+      weekly</h1>
     <!-- <p style="font-size: large;">816-887-6115</p>
     <p>HONEY1BUD&#64;GMAIL.COM</p> -->
   </div>
