@@ -13,7 +13,7 @@ export class HomePage implements OnInit, OnDestroy{
   
   ngOnInit(){
     this.showSlides(this.slideIndex)
-    // this.startSlideshow();
+    this.startSlideshow();
   }
 
   ngOnDestroy(){

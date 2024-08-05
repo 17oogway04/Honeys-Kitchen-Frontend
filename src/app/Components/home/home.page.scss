@@ -1,46 +1,56 @@
-// .img-wrapper {
-//     min-height: 400px;
-//     width: 100%;
-//     background-size: cover;
-//     background-position: center;
-//     background-repeat: no-repeat;
-// }
-// ion-content{
-//   font-family: "Maname", serif;
-//     font-weight: 400;
-//     font-style: normal;  
-// }
-
-
-// ion-card-title, ion-card-content{
-//   font-family: "Maname", serif;
-//     font-weight: 400;
-//     font-style: normal;  
-// }
-
 #first {
-  font-size: 3.5rem;
+  font-size: 3.8rem;
   color: white;
   position: absolute;
-  top: 50%;
-  left: 15%;
-  bottom: 15%;
+  margin-top: 200px;
+  margin-left: 120px;
   transform: translate(-50%, -50%);
   font-family: "Maname", serif;
   font-weight: 600;
   font-style: normal;
 }
 #second {
-  font-size: 3.5rem;
+  font-size: 3.8rem;
   color: white;
   position: absolute;
-  top: 60%;
-  left: 20%;
-  bottom: 10%;
+  margin-top: 255px;
+  margin-left: 150px;
   transform: translate(-50%, -50%);
   font-family: "Maname", serif;
   font-weight: 600;
   font-style: normal;
+}
+
+p{
+  font-family: "Maname", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2em;
+}
+h2{
+  text-align: center;
+  font-family: "Maname", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.2em;
+}
+
+#header{
+  font-family: "Maname", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.8rem;
+  text-align: center;
+}
+#centered{
+  margin: auto;
+  width: auto;
+  text-align: center;
+}
+
+#infoimg{
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 

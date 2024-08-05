@@ -3,24 +3,24 @@
     <h1 id="first">Honey's</h1>
     <h1 id="second">Kitchen</h1>
     <div class="mySlides">
-      <img src="../../../assets/img/1.jpeg" style="width:100%; height: 400px; object-fit: cover;">
+      <img src="../../../assets/img/1.jpeg" style="width:100%; height: 500px; object-fit: cover;">
     </div>
     <div class="mySlides">
-      <img src="../../../assets/img/Meatrolls.jpeg" style="width:100%;  height: 400px; object-fit: cover;">
+      <img src="../../../assets/img/11.jpeg" style="width:100%;  height: 500px; object-fit: cover;">
     </div>
     <div class="mySlides">
-      <img src="../../../assets/img/5.jpeg" style="width:100%; height: 400px; object-fit: cover;">
+      <img src="../../../assets/img/7.jpeg" style="width:100%; height: 500px; object-fit: cover;">
     </div>
     <div class="mySlides">
-      <img src="../../../assets/img/9.jpeg" style="width:100%;  height: 400px; object-fit: cover;">
+      <img src="../../../assets/img/9.jpeg" style="width:100%;  height: 500px; object-fit: cover;">
     </div>
     <div class="mySlides">
-      <img src="../../../assets/img/2.jpeg" style="width:100%;  height: 400px; object-fit: cover;">
+      <img src="../../../assets/img/2.jpeg" style="width:100%;  height: 500px; object-fit: cover;">
     </div>
-  
+
     <!-- <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
     <a class="next" (click)="plusSlides(1)">&#10095;</a> -->
-  
+
     <div class="dot-container">
       <span class="dot" (click)="currentSlide(1)"></span>
       <span class="dot" (click)="currentSlide(2)"></span>
@@ -29,8 +29,70 @@
       <span class="dot" (click)="currentSlide(5)"></span>
     </div>
   </div>
-  <div style="text-align: center;">
-    <h1 style="font-size: xx-large; padding-bottom: 20px;">Personalized Meal Preps cooked in your own home, or delivered
-      weekly</h1>
+
+  <!--Services-->
+  <ion-grid>
+    <ion-row>
+      <ion-col sizeLg="6" sizeMd="6" sizeSm="12" sizeXs="12">
+        <img src="../../../assets/img/10.jpeg" id="infoimg">
+      </ion-col>
+      <ion-col sizeLg="6" sizeMd="6" sizeSm="12" sizeXs="12">
+        <div style=" margin: auto;">
+          <h2>Meal Prepping</h2>
+          <div id="centered">
+            <p>Enjoy stress-free, gourmet meals with our meal prepping service. We handle everything from planning and
+              shopping
+              to cooking and packaging,
+              so you can savor delicious, healthy meals without the hassle</p>
+          </div>
+        </div>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col sizeLg="6" sizeMd="6" sizeSm="12" sizeXs="12">
+        <img src="../../../assets/img/Potatorolls.jpeg" id="infoimg">
+      </ion-col>
+      <ion-col sizeLg="6" sizeMd="6" sizeSm="12" sizeXs="12">
+        <div style="margin: auto;">
+          <h2>Catering</h2>
+          <div id="centered">
+            <p>Whether it's an intimate gathering or a large celebration, our catering services provide exquisite,
+              customized
+              menus that will impress your
+              guests and make your event unforgettable.</p>
+          </div>
+        </div>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col sizeLg="6" sizeMd="6" sizeSm="12" sizeXs="12">
+        <img src="../../../assets/img/Meatrolls.jpeg" id="infoimg">
+      </ion-col>
+      <ion-col sizeLg="6" sizeMd="6" sizeSm="12" sizeXs="12">
+        <div style="margin: auto;">
+          <h2>Banquets</h2>
+          <div id="centered">
+            <p>Our banquet services are perfect for larger events, offering a variety of menu options and impeccable
+              service to
+              ensure your occasion is a
+              resounding success.</p>
+          </div>
+        </div>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div style="text-align: center; padding-bottom: 30px;">
+    <ion-button shape="round" color="dark" routerLink="/schedule">Schedule a Consulation</ion-button>
+
   </div>
 </ion-content>
