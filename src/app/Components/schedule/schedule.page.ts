@@ -10,7 +10,11 @@ export class SchedulePage implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() { 
+    window.Calendly.initInlineWidget({
+    url: 'https://calendly.com/17oogway04/consulation',
+    parentElement: document.querySelector('.calendly-inline-widget')
+   });
   }
 
 }

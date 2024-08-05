@@ -1,12 +1,38 @@
-ion-col{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+h1 {
+    text-align: center;
+    font-size: 5rem;
 }
 
-ion-row{
-    height: 50vh;
+#headerimg{
+   object-fit: cover;
+   height: 350px;
 }
 
+@media (max-width: 700px) {
 
-  
+    #headerimg{
+        display: none;
+    }
+
+    h1{
+        margin-top: 50px;
+    }
+}
+
+#profilePic{
+    height: 200px;
+    width: 220px;
+    margin-left: 5px;
+}
+h2{
+    font-size: 2em;
+}
+p{
+    font-size: 1.2em;
+}
+
+ion-content{
+    font-family: "Maname", serif;
+    font-weight: 400;
+    font-style: normal;
+}

@@ -1,59 +1,57 @@
-<ion-content [fullscreen]="true">  
+<ion-content [fullscreen]="true">
+  <ion-img src="../../../assets/img/Pasted Graphic 6.png" id="headerimg"></ion-img>
+  <h1>MEET THE CHEF</h1>
+  <ion-img src="../../../assets/img/MEET THE CHEF.png"></ion-img>
 
-  <ion-title style=" margin-top: 100px; text-align: center; margin-bottom: 10px;">Which are you scheduling?</ion-title>
-
-  <!-- <ion-grid>
+  <ion-grid>
     <ion-row>
-      <ion-col [sizeXs]="12" sizeSm="6" sizeLg="6">
-        <ion-card style="max-width: 400px; text-align: center;">
-          <img alt="Honey's Kitchen" src="../../../assets/img/Meatrolls.jpeg" />
-          <ion-card-header>
-            <ion-card-title>Request a Service</ion-card-title>
-          </ion-card-header>
-          <ion-card-content>
-            Please select a service that you would like to request and send an email with any information the chef would
-            need to know.
-          </ion-card-content>
-
-          <ion-button fill="clear" color="dark">Meal Preppping</ion-button>
-          <ion-button fill="clear" color="dark">Banquets</ion-button>
-          <ion-button fill="clear" color="dark" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/17oogway04/catering'});
-      return false;">Catering</ion-button>
-        </ion-card>
+      <ion-col sizeLg="2">
+        <div>
+          <img src="../../../assets/img/profileSymbol.png" id="profilePic">
+        </div>
       </ion-col>
-      <ion-col [sizeXs]="12" sizeSm="6" size-lg="6">
-        <ion-card style="max-width: 400px; text-align: center;">
-          <img alt="Honey's Kitchen" src="../../../assets/img/Potatorolls.jpeg" />
-          <ion-card-header>
-            <ion-card-title>Schedule a Consulation</ion-card-title>
-          </ion-card-header>
-          <ion-card-content>
-            Please select a time that you and the chef can meet together and begin the first steps!
-          </ion-card-content>
-          <ion-button fill="clear" color="dark" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/17oogway04/catering'});
-        return false;">Consulation</ion-button>
-        </ion-card>
+      <ion-col sizeLg="10">
+        <h2>Honey Edwards</h2>
+        <p style="font-style: italic;">Owner</p>
+        <p>Honey1bud&#64;gmail.com</p>
+        <p>816-887-6115</p>
+
       </ion-col>
     </ion-row>
-
-  </ion-grid> -->
-
-  <ion-toolbar>
-    <ion-segment>
-      <ion-segment-button routerLink="meal-prep">
-        <ion-label>Meal Prep</ion-label>
-      </ion-segment-button>
-      <ion-segment-button routerLink="catering">
-        <ion-label>Catering</ion-label>
-      </ion-segment-button>
-      <ion-segment-button routerLink="banquets">
-        <ion-label>Banquets</ion-label>
-      </ion-segment-button>
-      <ion-segment-button routerLink="consulation">
-        <ion-label>Consulation</ion-label>
-      </ion-segment-button>
-    </ion-segment>
-  </ion-toolbar>
-  <router-outlet></router-outlet>
+    <ion-row>
+      <ion-col>
+        <p>
+          I am Chef Honey, the founder and executive chef of Honey's Kitchen, My culinary journey began in the sweet
+          world of pastry, where I honed my skills and developed a deep passion for creating delightful desserts.
+          Working in a bakery allowed me to perfect my craft and understand the intricate balance of flavors
+          and textures. <br><br>My career took a pivotal turn when I had the privilege of studying under some of Kansas
+          City's
+          most renowned chefs. Their mentorship and guidance were instrumental in shaping my approach to cooking and
+          instilling in me the values of
+          dedication, creativity, and excellence.<br><br> At Honey's Kitchen, my mission is to bring convenience and
+          gourmet
+          dining to your table. I look forward to sharing my passion for food with you and creating
+          memorable culinary experiences that are both stress-free and exceptional.
+        </p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <h2 style="text-align: center;">Schedule a Consulation</h2>
+        
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+       
+          <!-- Calendly inline widget begin -->
+          <div class="calendly-inline-widget" data-url="https://calendly.com/17oogway04/catering"
+            style="min-width:320px;height:700px;"></div>
+          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+          <!-- Calendly inline widget end -->
+       
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
 </ion-content>
