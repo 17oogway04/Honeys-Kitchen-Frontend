@@ -1,16 +1,16 @@
 #first {
-  font-size: 3.8rem;
+  font-size: 3.9rem;
   color: white;
   position: absolute;
   margin-top: 200px;
-  margin-left: 120px;
+  margin-left: 130px;
   transform: translate(-50%, -50%);
   font-family: "Maname", serif;
   font-weight: 600;
   font-style: normal;
 }
 #second {
-  font-size: 3.8rem;
+  font-size: 3.9rem;
   color: white;
   position: absolute;
   margin-top: 255px;
@@ -19,6 +19,16 @@
   font-family: "Maname", serif;
   font-weight: 600;
   font-style: normal;
+}
+
+@media (max-width: 600px) {
+    #first{
+      font-size: 4.8rem;
+    }
+
+    #second{
+      font-size: 4.8rem;
+    }   
 }
 
 p{
