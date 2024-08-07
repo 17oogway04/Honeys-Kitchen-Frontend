@@ -19,6 +19,15 @@ h1 {
     }
 }
 
+@media (max-width: 580px) {
+    #picture{
+        text-align: center;
+    }
+    #description{
+        text-align: center;
+    }
+}
+
 #profilePic{
     height: 200px;
     width: 220px;
