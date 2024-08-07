@@ -28,21 +28,31 @@
 
     #second{
       font-size: 4.8rem;
-    }   
+    }  
+    
+    h2{
+      font-size: 1.5em;
+    }
+}
+
+@media (max-width: 1300px) {
+  #centered{
+    font-size: 10px;
+  } 
 }
 
 p{
   font-family: "Maname", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.2em;
+  font-size: 2.5em;
 }
 h2{
   text-align: center;
   font-family: "Maname", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 2.2em;
+  font-size: 3em;
 }
 
 #header{
