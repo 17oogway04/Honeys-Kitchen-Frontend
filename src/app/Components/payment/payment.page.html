@@ -5,40 +5,40 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-card >
-  </ion-card>
-  <ion-card>    
+<div style="display:flex; text-align: center; flex-wrap: wrap; justify-content: space-between;">
+  <ion-card style="width: 550px;">    
     <img src="../../../assets/img/CakeFlowers.jpg" style="object-fit: cover; height: 300px; width: 100%;">
     <ion-card-header>
-      <ion-card-title id="title">Paypal</ion-card-title>
+      <ion-card-title id="title">Zelle</ion-card-title>
     </ion-card-header>
     <ion-card-content id="content">
-      Click on the link to pay using Paypal: 
-      <a href="https://paypal.me/danielgilly?country.x=US&locale.x=en_US">Paypal</a>
+      Click on the link to pay using Zelle: 
+      <ion-button (click)="openForm()" fill="clear">Zelle</ion-button>
     </ion-card-content>
   </ion-card>
 
-  <ion-card >
-  </ion-card>
-  <ion-card>    
+  <ion-card style="width: 550px;">    
     <img src="../../../assets/img/9.jpeg" style="object-fit: cover; height: 300px; width: 100%;">
     <ion-card-header>
       <ion-card-title id="title">CashApp</ion-card-title>
     </ion-card-header>
     <ion-card-content id="content">
       Click on the link to pay using CashApp: 
-      <a href="https://cash.app/$GillymaN2">CashApp</a>
+      <a href="https://cash.app/$honeyedkitchen">CashApp</a>
     </ion-card-content>
   </ion-card>
 
-  <ion-card>    
+  <ion-card style="width: 550px;">    
     <img src="../../../assets/img/8.jpeg" style="object-fit: cover; height: 300px; width: 100%;">
     <ion-card-header>
       <ion-card-title id="title">Venmo</ion-card-title>
     </ion-card-header>
     <ion-card-content id="content">
       Click on the link to pay using Venmo: 
-      <a href="">Venmo</a>
+      <a href="https://venmo.com/u/honeyedkitchen">Venmo</a>
     </ion-card-content>
   </ion-card>
+</div>
+  <ion-img *ngIf="isFormVisible" src="../../../assets/img/Zelle® QR Code20240910_095202.png.jpg" id="inputForm"></ion-img>
+  <ion-button fill="clear" (click)="closeForm()">Close</ion-button>
 </ion-content>
