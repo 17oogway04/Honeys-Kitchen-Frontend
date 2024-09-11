@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaymentPage implements OnInit {
 
+  isFormVisible = false
   constructor() { }
 
   ngOnInit() {
   }
-
+  openForm(){
+    this.isFormVisible = true;
+  }
+  closeForm(){
+    this.isFormVisible = false;
+  }
 }
