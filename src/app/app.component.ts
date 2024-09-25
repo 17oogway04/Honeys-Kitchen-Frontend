@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { MenuController } from '@ionic/angular';
 import { filter } from 'rxjs/operators';  // Import filter operator
+import { UserService } from './Services/user.service';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,7 @@ import { filter } from 'rxjs/operators';  // Import filter operator
 export class AppComponent {
   showHeader: boolean = true;
 
-  constructor(private router: Router, private menu: MenuController) {
+  constructor(private router: Router, private menu: MenuController, private userService: UserService) {
     this.router.events.pipe(
       filter((event): event is NavigationEnd => event instanceof NavigationEnd)
     ).subscribe((event: NavigationEnd) => {
@@ -23,6 +24,10 @@ export class AppComponent {
     window.alert("Updates coming soon for this feature!")
   }
 
+  logout(){
+    this.userService.logout()
+    window.alert("Logout successfully")
+  }
   async openMenu() {
     await this.menu.open('start');
   }

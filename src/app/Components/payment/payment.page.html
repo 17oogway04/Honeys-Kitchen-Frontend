@@ -5,40 +5,43 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-<div style="display:flex; text-align: center; flex-wrap: wrap; justify-content: space-between;">
-  <ion-card style="width: 550px;">    
-    <img src="../../../assets/img/CakeFlowers.jpg" style="object-fit: cover; height: 300px; width: 100%;">
-    <ion-card-header>
-      <ion-card-title id="title">Zelle</ion-card-title>
-    </ion-card-header>
-    <ion-card-content id="content">
-      Click on the link to pay using Zelle: 
-      <ion-button (click)="openForm()" fill="clear">Zelle</ion-button>
-    </ion-card-content>
-  </ion-card>
+  <div style="display:flex; text-align: center; flex-wrap: wrap; justify-content: space-between;">
+    <ion-card style="width: 550px;">
+      <img src="../../../assets/img/CakeFlowers.jpg" style="object-fit: cover; height: 300px; width: 100%;">
+      <ion-card-header>
+        <ion-card-title id="title">Zelle</ion-card-title>
+      </ion-card-header>
+      <ion-card-content id="content">
+        Click on the link to pay using Zelle:
+        <ion-button (click)="openForm()" fill="clear" style="padding-bottom: 7px;">Zelle</ion-button>
+      </ion-card-content>
+    </ion-card>
 
-  <ion-card style="width: 550px;">    
-    <img src="../../../assets/img/9.jpeg" style="object-fit: cover; height: 300px; width: 100%;">
-    <ion-card-header>
-      <ion-card-title id="title">CashApp</ion-card-title>
-    </ion-card-header>
-    <ion-card-content id="content">
-      Click on the link to pay using CashApp: 
-      <a href="https://cash.app/$honeyedkitchen">CashApp</a>
-    </ion-card-content>
-  </ion-card>
+    <ion-card style="width: 550px;">
+      <img src="../../../assets/img/9.jpeg" style="object-fit: cover; height: 300px; width: 100%;">
+      <ion-card-header>
+        <ion-card-title id="title">CashApp</ion-card-title>
+      </ion-card-header>
+      <ion-card-content id="content">
+        Click on the link to pay using CashApp:
+        <ion-button href="https://cash.app/$honeyedkitchen" fill="clear" style="padding-bottom: 7px;">CashApp</ion-button>
+      </ion-card-content>
+    </ion-card>
 
-  <ion-card style="width: 550px;">    
-    <img src="../../../assets/img/8.jpeg" style="object-fit: cover; height: 300px; width: 100%;">
-    <ion-card-header>
-      <ion-card-title id="title">Venmo</ion-card-title>
-    </ion-card-header>
-    <ion-card-content id="content">
-      Click on the link to pay using Venmo: 
-      <a href="https://venmo.com/u/honeyedkitchen">Venmo</a>
-    </ion-card-content>
-  </ion-card>
-</div>
-  <ion-img *ngIf="isFormVisible" src="../../../assets/img/Zelle® QR Code20240910_095202.png.jpg" id="inputForm"></ion-img>
-  <ion-button fill="clear" (click)="closeForm()">Close</ion-button>
+    <ion-card style="width: 550px;">
+      <img src="../../../assets/img/8.jpeg" style="object-fit: cover; height: 300px;width: 100%;">
+      <ion-card-header>
+        <ion-card-title id="title">Venmo</ion-card-title>
+      </ion-card-header>
+      <ion-card-content id="content">
+        Click on the link to pay using Venmo:
+        <ion-button fill="clear" href="https://venmo.com/u/honeyedkitchen" style="padding-bottom: 7px;">Venmo</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <div *ngIf="isFormVisible" id="inputForm" style="text-align: center;">
+    <img src="../../../assets/img/Zelle® QR Code20240910_095202.png.jpg" style="object-fit: cover; height: 500px;">
+    <ion-button fill="clear" color="danger" (click)="closeForm()">Close</ion-button>
+
+  </div>
 </ion-content>

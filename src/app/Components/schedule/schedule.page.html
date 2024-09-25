@@ -6,8 +6,17 @@
   <ion-grid>
     <ion-row>
       <ion-col sizeXl="2" sizeLg="3" sizeMd="4" sizeSm="5" sizeXs="12">
-        <div id="picture">
-          <img src="../../../assets/img/profileSymbol.png" id="profilePic">
+        <div class="avatar-container">
+          <div class="image-container" 
+               [ngStyle]="{ backgroundImage: 'url(' + (profilePic || '../../../assets/img/profileSymbol.png') + ')' }">
+          </div>
+          
+          <label for="avatar-input-file" *ngIf="isAuthenticated">
+            <div class="icon-wrapper">
+              <input type="file" id="avatar-input-file" accept="image/*" (change)="onFileChange($event)" />
+              <ion-icon id="icon" name="create-outline"></ion-icon>
+            </div>
+          </label>
         </div>
       </ion-col>
       <ion-col sizeXl="10" sizeLg="9" sizeMd="8" sizeSm="7" sizeXs="12">
@@ -24,7 +33,7 @@
     <ion-row>
       <ion-col>
         <p>
-          I am Chef Honey, the founder and executive chef of Honey's Kitchen, My culinary journey began in the sweet
+          I am Chef Honey, the founder and executive chef of Honey's Kitchen. My culinary journey began in the sweet
           world of pastry, where I honed my skills and developed a deep passion for creating delightful desserts.
           Working in a bakery allowed me to perfect my craft and understand the intricate balance of flavors
           and textures. <br><br>My career took a pivotal turn when I had the privilege of studying under some of Kansas

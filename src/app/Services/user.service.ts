@@ -14,6 +14,26 @@ export class UserService {
 
   constructor(private http: HttpClient) { }
 
+  uploadProfilePicture(file: File): Observable<any>{
+    const formData = new FormData();
+    formData.append('file', file);
+    let reqHeaders = 
+    {
+      Authorization: `Bearer ${localStorage.getItem(this.tokenKey)}`
+    }
+    return this.http.post(`${this.baseURL}/upload-profile-picture`, formData, {headers: reqHeaders});
+  }  
+  getLorenByUsername(email: string): Observable<User>{
+
+    return this.http.get<User>(`${this.baseURL}/by-username/${email}`)
+  }
+  logout(){
+    this.isLoggedInSubj.next(false);
+    localStorage.removeItem('honeysKitchenToken')
+    if(localStorage.getItem('honeysKitchenToken') === null){
+      console.log('Successfully logged out')
+    }
+  }
   register(newUser: User)
   {
     return this.http.post(`${this.baseURL}/register`, newUser);
@@ -26,7 +46,8 @@ export class UserService {
     queryParams = queryParams.append('password', password);
 
     return this.http.get(`${this.baseURL}/login`, {params: queryParams, responseType: 'text'})
-      .pipe(tap(() => {
+      .pipe(tap((response: any) => {
+        localStorage.setItem("honeysKitchenToken", response);
         this.isLoggedInSubj.next(true);
       }))
   }
