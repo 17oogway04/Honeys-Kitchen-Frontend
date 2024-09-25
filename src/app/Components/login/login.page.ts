@@ -26,6 +26,13 @@ export class LoginPage implements OnInit {
     }, error => {
       console.log('Error: ', error);
       window.alert('Unsuccessful login');
+      if(error.status == 401){
+        window.alert("Feature not available yet")
+      }
     })
+  }
+
+  logout(){
+    this.userService.logout()
   }
 }
