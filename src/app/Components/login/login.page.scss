@@ -1,2 +1,4 @@
-
+ion-content {
+    --padding-top: calc(var(--ion-safe-area-top) + 90px); /* Header height adjustment */
+  }
 

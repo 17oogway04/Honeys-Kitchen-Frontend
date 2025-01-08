@@ -3,49 +3,64 @@ h1 {
     font-size: 5rem;
 }
 
-#headerimg{
-   object-fit: cover;
-   height: 350px;
+#first {
+    position: absolute;
+    top: 95px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 450px;
+    height: 600px;
+    padding: 10px;
+    z-index: 100 !important;
+    color: white;
+}
+
+#headerimg {
+    object-fit: cover;
+    height: 350px;
 }
 
 @media (max-width: 700px) {
 
-    #headerimg{
-        display: none;
-    }
+    // h1 {
+    //     margin-top: 50px;
+    // }
 
-    h1{
-        margin-top: 50px;
+    .avatar-container {
+        display: none;
     }
 }
 
 @media (max-width: 580px) {
-    #picture{
-        text-align: center;
+    #avatar-container {
+        display: none;
     }
-    #description{
+
+    #description {
         text-align: center;
     }
 }
 
-h2{
+h2 {
     font-size: 2em;
 }
-p{
+
+p {
     font-size: 1.2em;
 }
 
-ion-content{
+ion-content {
     font-family: "Maname", serif;
     font-weight: 400;
     font-style: normal;
 }
+
 .avatar-container {
     position: relative;
     width: fit-content;
-  }
-  
-  .image-container {
+}
+
+.image-container {
     height: 200px;
     width: 200px;
     z-index: 1;
@@ -54,25 +69,26 @@ ion-content{
     background-position: center;
     background-size: cover;
     box-shadow: 0px 1px 2px 2px black;
-  }
-  .icon-wrapper {
+}
+
+.icon-wrapper {
     label {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-  
+
     input[type='file'] {
         display: none;
     }
-  }
-  
-  .icon-wrapper {
+}
+
+.icon-wrapper {
     position: absolute;
     height: 40px;
     width: 40px;
     padding: .35rem;
-    background-color:#022562;
+    background-color: #022562;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -81,24 +97,24 @@ ion-content{
     top: 75%;
     z-index: 2;
     cursor: pointer;
-  
+
     &:hover {
         transition: all .25s;
         background-color: darken(#2962FF, 15%);
     }
-  
-    #icon{
+
+    #icon {
         color: white;
     }
-  
+
     label {
         cursor: pointer;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-  
+
     input[type='file'] {
         display: none;
     }
-  }
+}
