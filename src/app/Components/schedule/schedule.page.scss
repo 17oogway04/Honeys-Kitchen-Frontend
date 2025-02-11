@@ -5,7 +5,7 @@ h1 {
 
 #first {
     position: absolute;
-    top: 95px;
+    top: 115px;
     left: 50%;
     transform: translateX(-50%);
     width: 450px;
@@ -17,7 +17,7 @@ h1 {
 
 #headerimg {
     object-fit: cover;
-    height: 350px;
+    height: 500px;
 }
 
 @media (max-width: 700px) {
