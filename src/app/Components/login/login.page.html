@@ -10,10 +10,11 @@
           [(ngModel)]="password"></ion-input>
       </ion-item>
       <div>
-        <ion-button class="formItem" fill="clear" color="dark" type="submit">Login</ion-button>
+        <ion-button class="formItem" fill="clear" color="dark" type="submit">Login</ion-button>  
+        <ion-button (click)="logout()" fill="clear" color="danger">Logout</ion-button>
+
       </div>
     </form>
   </ion-list>
-  <!-- <ion-button (click)="logout()" fill="clear" color="danger">Logout</ion-button> -->
 
 </ion-content>
