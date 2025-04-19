@@ -30,7 +30,7 @@ export class SchedulePage implements OnInit {
 
   ngOnInit() { 
     window.Calendly.initInlineWidget({
-    url: 'https://calendly.com/17oogway04/consulation',
+    url: 'https://calendly.com/honey1bud/30min',
     parentElement: document.querySelector('.calendly-inline-widget')
    });
 
