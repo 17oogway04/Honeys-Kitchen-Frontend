@@ -7,7 +7,7 @@ import { User } from '../Models/user';
   providedIn: 'root'
 })
 export class UserService {
-  baseURL: string = "https://honeyskitchen-backend.onrender.com/api/endpoint"
+  baseURL: string = "https://honeyskitchen-backend.onrender.com/api/user"
   tokenKey: string = "honeysKitchenToken"
 
   public isLoggedInSubj = new Subject<boolean>();
