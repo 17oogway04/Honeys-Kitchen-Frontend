@@ -14,52 +14,56 @@ export class UserService {
 
   constructor(private http: HttpClient) { }
 
-  uploadProfilePicture(file: File): Observable<any>{
+  uploadProfilePicture(file: File): Observable<any> {
     const formData = new FormData();
     formData.append('file', file);
-    let reqHeaders = 
+    let reqHeaders =
     {
       Authorization: `Bearer ${localStorage.getItem(this.tokenKey)}`
     }
-    return this.http.post(`${this.baseURL}/upload-profile-picture`, formData, {headers: reqHeaders});
-  }  
-  getLorenByUsername(email: string): Observable<User>{
+    return this.http.post(`${this.baseURL}/upload-profile-picture`, formData, { headers: reqHeaders });
+  }
+  getLorenByUsername(email: string): Observable<User> {
 
     return this.http.get<User>(`${this.baseURL}/by-username/${email}`)
   }
-  logout(){
+  logout() {
     this.isLoggedInSubj.next(false);
     localStorage.removeItem('honeysKitchenToken')
-    if(localStorage.getItem('honeysKitchenToken') === null){
+    if (localStorage.getItem('honeysKitchenToken') === null) {
       console.log('Successfully logged out')
     }
   }
-  register(newUser: User)
-  {
+  register(newUser: User) {
     return this.http.post(`${this.baseURL}/register`, newUser);
   }
 
-  login(email: string, password: string)
-  {
-    let queryParams = new HttpParams();
-    queryParams = queryParams.append('email', email);
-    queryParams = queryParams.append('password', password);
+  login(email: string, password: string) {
+    // let queryParams = new HttpParams();
+    // queryParams = queryParams.append('email', email);
+    // queryParams = queryParams.append('password', password);
 
-    return this.http.get(`${this.baseURL}/login`, {params: queryParams, responseType: 'text'})
+    // return this.http.get(`${this.baseURL}/login`, {params: queryParams, responseType: 'text'})
+    //   .pipe(tap((response: any) => {
+    //     localStorage.setItem("honeysKitchenToken", response);
+    //     this.isLoggedInSubj.next(true);
+    //   }))
+
+    return this.http.post(`${this.baseURL}/login`, { email, password }, { responseType: 'text' })
       .pipe(tap((response: any) => {
         localStorage.setItem("honeysKitchenToken", response);
         this.isLoggedInSubj.next(true);
-      }))
+      }));
+
   }
 
-  getCurrentUser(): Observable<User>
-  {
+  getCurrentUser(): Observable<User> {
     let reqHeaders = {
       Authorization: `Bearer ${localStorage.getItem(this.tokenKey)}`
     }
 
-    return this.http.get<User>(`${this.baseURL}/current`, {headers: reqHeaders});
+    return this.http.get<User>(`${this.baseURL}/current`, { headers: reqHeaders });
   }
 
-  
+
 }
